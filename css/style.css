@@ -18,6 +18,22 @@ html {
   font-size: 62.5%;
 }
 
+/** button **/
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 30px;
+  font-size: 17px;
+  background: #C4A484;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #dfc2a5;
+}
+
 /** header **/
 
 .header {
@@ -80,4 +96,212 @@ html {
 
 #search-button {
   display: none;
+}
+
+/** closer **/
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+}
+
+#closer {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 10000;
+  color: #C4A484;
+  animation: rotate .4s linear .4s backwards;
+  display: none;
+}
+
+#closer:hover {
+  color: grey;
+}
+
+/** hamburger **/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-orient: vertical;
+  flex-flow: column;
+}
+
+.navbar.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  transition: .4s linear;
+}
+
+.navbar a {
+  margin: 10px 0;
+  font-size: 25px;
+  color: #C4A484;
+}
+
+.navbar a:hover {
+  color: grey;
+}
+
+/** shopping cart **/
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  padding-top: 80px;
+  overflow-y: scroll;
+}
+
+.shopping-cart.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  transition: .4s linear;
+}
+
+.shopping-cart .box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.shopping-cart .box .fa-times {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+}
+
+.shopping-cart .box .fa-times:hover,
+.shopping-cart .total span {
+  color: #C4A484;
+}
+
+.shopping-cart .box img {
+  height: 80px;
+}
+
+.shopping-cart .box .content h3 {
+  color: #C4A484;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.shopping-cart .box .content span {
+  font-size: 15px;
+  color: grey;
+}
+
+.shopping-cart .box .content span.multipy {
+  margin: 0 10px;
+}
+
+.shopping-cart .total {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  color: grey;
+}
+
+.shopping-cart .button {
+  width: 100%;
+  text-align: center;
+}
+
+/** login form **/
+
+.login-form {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  transition: .4s linear;
+}
+
+.login-form form {
+  padding: 17px;
+  border: 1px solid #C4A484;
+}
+
+.login-form form h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #C4A484;
+}
+
+.login-form form .box {
+  width: 100%;
+  text-transform: none;
+  font-size: 15px;
+  color: #C4A484;
+  padding: 10px 12px;
+  border: 1px solid #C4A484;
+  margin: 7px 0;
+}
+
+.login-form form .remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-form form .remember label {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 15px;
+  color: grey;
+}
+
+.login-form form .button {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form form p {
+  padding-top: 10px;
+  font-size: 14px;
+  color: grey;
+}
+
+.login-form form p a {
+  color: #C4A484;
+}
+
+.login-form form p a:hover {
+  text-decoration: underline;
 }
