@@ -18,6 +18,22 @@ html {
   font-size: 62.5%;
 }
 
+/** scrollbar **/
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #C4A484;
+}
+
+/** page padding **/
+
+section {
+  padding: 30px 10%;
+}
+
 /** button **/
 
 .button {
@@ -304,4 +320,150 @@ html {
 
 .login-form form p a:hover {
   text-decoration: underline;
+}
+
+/** cool image slider thingy **/
+
+@keyframes fadeOut {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+}
+
+.home {
+  position: relative;
+}
+
+.home .slides-container .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  display: none;
+}
+
+.home .slides-container .slide.active {
+  display: flex;
+}
+
+.home .slides-container .slide .content {
+  box-flex: 1;
+  flex: 1 1 400px;
+  animation: fadeLeft .4s linear .4s backwards;
+}
+
+.home .slides-container .slide .content span {
+  font-size: 25px;
+  color: grey;
+}
+
+.home .slides-container .slide .content h3 {
+  font-size: 60px;
+  color: #C4A484;
+  padding-top: 5px;
+}
+
+.home .slides-container .slide .content p {
+  font-size: 15px;
+  color: grey;
+  padding: 5px 0;
+  line-height: 2;
+}
+
+.home .slides-container .slide .image {
+  box-flex: 1;
+  flex: 1 1 400px;
+  padding: 30px 0;
+}
+
+.home .slides-container .slide .image img {
+  width: 100%;
+  animation: fadeOut .4s linear;
+}
+
+.home #slide-next,
+.home #slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #C4A484;
+  border-radius: 15px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+.home #slide-next:hover,
+.home #slide-prev:hover {
+  background: #C4A484;
+  color: #fff;
+}
+
+.home #slide-next {
+  right: 20px;
+  color: #C4A484;
+}
+
+.home #slide-prev {
+  left: 20px;
+  color: #C4A484;
+}
+
+/** banner **/
+
+.banner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.banner-container .banner {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-container .banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-container .banner:hover img {
+  transform: scale(1.2);
+}
+
+.banner-container .banner .content {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.banner-container .banner .content span {
+  font-size: 17px;
+  color: grey;
+}
+
+.banner-container .banner .content h3 {
+  padding-top: 5px;
+  font-size: 22px;
+  color: #C4A484;
+}
+
+.banner-container .banner .content .button {
+  padding: 7px 25px;
 }
