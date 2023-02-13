@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+/** overall css **/
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/** header **/
+
+.header {
+  padding: 20px 9%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #F6EED9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+/** search **/
+
+.header .search-form {
+  height: 50px;
+  width: 500px;
+  border-radius: 50px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid #C4A484;
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 16px;
+  color: #C4A484;
+  text-transform: none;
+}
+
+.header .search-form label {
+  font-size: 22px;
+  padding-right: 17px;
+  cursor: pointer;
+  color: #C4A484;
+}
+
+.header .search-form label:hover,
+.header .icons div:hover {
+  color: grey;
+}
+
+.header .icons div {
+  margin-left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #C4A484;
+}
+
+#search-button {
+  display: none;
+}
