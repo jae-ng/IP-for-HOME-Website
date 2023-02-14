@@ -64,7 +64,6 @@ section {
   color: #fff;
 }
 
-
 /** section title **/
 
 .title {
@@ -77,6 +76,8 @@ section {
   border-bottom: 1px solid #C4A484;
   padding-bottom: 15px;
 }
+
+/** button **/
 
 .button {
   display: inline-block;
