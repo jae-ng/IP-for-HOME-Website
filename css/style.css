@@ -702,6 +702,92 @@ section {
   color: #C4A484;
 }
 
+/** vip **/
+
+.vip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vip .image,
+.vip .content {
+  flex: 1 1 400px;
+}
+
+.vip .image img {
+  width: 100%;
+}
+
+.vip .content h3 {
+  font-size: 100px;
+  color: #BABDBE;
+}
+
+.vip .content h2 {
+  font-size: 24px;
+  color: #BABDBE;
+}
+
+.vip .content h1 {
+  font-size: 22px;
+  color: grey;
+  margin-top: 20px;
+}
+
+.vip .content h1 .nexttier {
+  color: #CA9842;
+}
+
+.vip .content p {
+  font-size: 18px;
+  color: grey;
+  padding-top: 10px;
+  line-height: 2;
+}
+
+/** tiers **/
+
+.tiers .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.tiers .box-container .box {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #C4A484;
+}
+
+.tiers .box-container .box img {
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tiers .box-container .box h1 {
+  font-size: 22px;
+  color: #5E3F17;
+}
+
+.tiers .box-container .box h2 {
+  font-size: 22px;
+  color: #BABDBE;
+}
+
+.tiers .box-container .box h3 {
+  font-size: 22px;
+  color: #CA9842;
+}
+
+.tiers .box-container .box p {
+  font-size: 14px;
+  color: grey;
+  line-height: 2;
+}
+
 /** footer **/
 
 .footer {
@@ -764,4 +850,3 @@ section {
   color: #fff;
   background: #C4A484;
 }
-
