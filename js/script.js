@@ -36,6 +36,20 @@ closer.onclick = () =>{
     loginForm.classList.remove('active');
 }
 
+//search bar mobile
+
+let searchForm = document.querySelector('.header .search-form');
+
+document.querySelector('#search-button').onclick = () =>{
+    searchForm.classList.toggle('active');
+}
+
+//remove search bar mobile on scroll
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+}
+
 //image slider
 
 let slides = document.querySelectorAll('.home .slides-container .slide');
