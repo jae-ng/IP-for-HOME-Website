@@ -37,6 +37,8 @@ The VIP page shows the users what tier they are at and what they have to do to i
 
 In the Contact page there is a form which allows users to enter their details to contact the store should they have any enquirys. There is also an interactable map which displays the stores's location.
 
+In the Checkout page, there is a form which allows users to enter their card details to allow them to pay for their items.
+
 ## Features Left To Implement
 
 API that logs information from users logging into their accounts.
