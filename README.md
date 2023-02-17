@@ -35,9 +35,9 @@ In the Blog page there are a few boxes with thumbnails and a button "watch" whic
 
 The VIP page shows the users what tier they are at and what they have to do to increase their tier as well as a section which allows them to view the benefits of the different tiers.
 
-In the Contact page there is a form which allows users to enter their details to contact the store should they have any enquirys. There is also an interactable map which displays the stores's location.
+In the Contact page there is a form which allows users to enter their details to contact the store should they have any enquirys. There is also an interactable map which uses API to display the stores's location, and users can also press a button to find their location.
 
-In the Checkout page, there is a form which allows users to enter their card details to allow them to pay for their items.
+In the Checkout page, there is a form which allows users to enter their card details to allow them to pay for their items. At the end of the Checkout Page, there is a lottie animation to show that the items that the user has ordered are on the way.
 
 ## Features Left To Implement
 
