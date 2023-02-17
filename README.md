@@ -3,6 +3,8 @@
 ## __for HOME__
 <br>
 
+[Github Page](https://github.com/jae-ng/IP-for-HOME-Website)
+
 # Design Process
  
 This website is made for a furniture store based in Singapore called "for HOME furniture". It is a store which aims to attract loyal customers with innovative furniture and interesting gamification concepts on their site.
