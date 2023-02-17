@@ -1,7 +1,6 @@
 # Your Project's Name
 
 ## __for HOME__
-<br>
 
 [Github Page](https://github.com/jae-ng/IP-for-HOME-Website)
 
